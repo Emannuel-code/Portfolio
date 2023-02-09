@@ -16,6 +16,7 @@ html {
 body {
     font-size: 100%;
     background-color: #222222;
+    width: 100%;
 }
 
 /*-----cabeçalho-----*/
@@ -26,7 +27,6 @@ body {
     align-items: center;
     justify-content: space-around;
     padding: 34px;
-
     width: 100%;
     overflow: hidden;
     background-color: #222222;
@@ -55,6 +55,96 @@ body {
     font-size: 18px;
 }
 
+
+#header {
+    box-sizing: border-box;
+    height: 100px;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #303030;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+
+#menu a {
+    display: block;
+    padding: .5rem;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: 90px;
+        right: 0px;
+        background: #303030;
+        height: 0px;
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #nav.active #menu {
+        height: 80vh ;
+        visibility: visible;
+        overflow-y: visible;
+    }
+
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1 rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+
+    #hamburguer {
+        display: block;
+        border-top: 2px solid #5035AC;
+        width: 20px;
+    }
+    #hamburguer::after, #hamburguer::before  {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: #5035AC;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+    #nav.active #hamburguer {
+        border-top-color: transparent;
+    }
+    #nav.active #hamburguer::before {
+       transform: rotate(135deg);
+    }
+
+    #nav.active #hamburguer::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
+
 nav a {
     color: #DADAE7;
     text-decoration: none;
@@ -64,8 +154,8 @@ nav a {
 
 nav a::after {
     content: "";
-    width: 0%;
-    height: 3px;
+    width: 10%;
+    height: 2px;
     background-color: #5035AC;
     margin-bottom: 1px;
     position: absolute;
@@ -75,7 +165,7 @@ nav a::after {
 }
 
 nav a:hover::after {
-  width: 100%;
+  width: 80%;
 }
 /*----HOME---*/
 
@@ -357,7 +447,7 @@ nav a:hover::after {
     color: #DADAE7;
     font-family: 'montserrat', sans-serif;
     font-size: 1rem;
-    margin-right: 12px;
+    margin-right: 10px;
 }
 
 .projetos-titulo {
@@ -466,22 +556,14 @@ nav a:hover::after {
         text-align: center;
     }
 
-    .logo {
-        visibility: hidden;
-    }
-
-
-    .nav {
+    nav {
         margin-bottom: 0;
     }
 
     .conteudo-principal-subtitulo {
-        font-size: 1.6rem;
+        font-size: 0.7em;
         text-align: center;
-    }
-
-    .nav-links {
-        justify-content: center;
+        margin: 0 5px 0 8px;
     }
 
     .perfil-img {
@@ -494,6 +576,7 @@ nav a:hover::after {
 
     .conteudo {
         margin-bottom: 2rem;
+        border: none;
     }
 
     .perfil-img img {
@@ -502,7 +585,7 @@ nav a:hover::after {
     }
 
     .conteudo-principal {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .sobre-mim section {
@@ -518,6 +601,7 @@ nav a:hover::after {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-right: 1.5rem;
     }
 
     .projeto-img {
@@ -542,7 +626,7 @@ nav a:hover::after {
     flex-direction: column;
     align-items: center;
     margin: 2rem;
-    margin-left: 5rem;
+    margin-left: 3rem;
 }
 
 .conteudo-secundario-paragrafo {
@@ -550,10 +634,3 @@ nav a:hover::after {
     line-height: 2rem;
 }
 
-.cabecalho-menu-item {
-    display: flex;
-    flex-direction: center;
-    align-items: center;
-    margin-left: 0.5rem;
-    font-size: 1.2rem;
-}
