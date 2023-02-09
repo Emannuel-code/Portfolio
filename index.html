@@ -15,17 +15,25 @@
     <div class="scroll-up-btn">
       <ion-icon name="arrow-dropup"></ion-icon>
     </div>
-    <header class="cabecalho">
-       <div><a href="#" class="logo">Port<span class="l">folio</span></a></div>
+  <section>
+    <header id="header" class="cabecalho">
+      <a href="#" class="logo">Port<span class="l">folio</span></a>
        
-       <nav class="cabecalho-menu">
-         <a class="cabecalho-menu-item" href="#sobre">Sobre mim</a>
-         <a class="cabecalho-menu-item" href="#skills">Skills</a>
-         <a class="cabecalho-menu-item"  href="#projetos">Projetos</a>
-         <a class="cabecalho-menu-item"  href="#contato">Contato</a>
-       </nav>
+      <nav id="nav">
+       <button id="btn-mobile" aria-label="Abrir menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false"><span id="hamburguer"></span> 
+       </button>
 
-    </header>
+           <ul id="menu" role="menu">
+               <li><a class="cabecalho-menu-item" href="#sobre">Sobre mim</a></li>
+               <li><a class="cabecalho-menu-item" href="#skills">Skills</a></li>
+               <li><a class="cabecalho-menu-item"  href="#projetos">Projetos</a></li>
+               <li><a class="cabecalho-menu-item"  href="#contato">Contato</a></li>
+           </ul>
+      </nav>
+       
+   </header>
+  </section>
+    
 
     <main class="conteudo">
         <section class="conteudo-principal">
@@ -101,7 +109,7 @@
                   <p>Portfolio que foi utilizado os meus conhecimentos em HTML, CSS E JavaScript
                   </p>
                   <div class="projeto-buttom">
-                      <a href="https://github.com/Emannuel-code/Portfolio" target="_blank"
+                      <a href="github" target="_blank"
                           class="projeto-link">GitHub<img src="assets/img/githhubButton.svg"></a>
                       <a href="link" target="_blank" class="projeto-link">Site<img
                               src="assets/img/siteButton.svg"></a>
