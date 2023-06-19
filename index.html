@@ -12,10 +12,10 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
+  <section>
     <div class="scroll-up-btn">
       <ion-icon name="arrow-dropup"></ion-icon>
     </div>
-  <section>
     <header id="header" class="cabecalho">
       <a href="#" class="logo">Port<span class="l">folio</span></a>
        
@@ -39,15 +39,19 @@
         <section class="conteudo-principal">
           <div class="conteudo-principal-escrito">
              <h1 class="conteudo-principal-titulo">Olá, meu nome é Emannuel</h1>
-             <h2 class="conteudo-principal-subtitulo">I'm Front-End Developer</h2>       
+             <h2 class="conteudo-principal-subtitulo">I'm Front-End Developer</h2>  
+             <div class="button2"><a class="button" href="assets/document/curriculo1.pdf" target="_blank">Download do meu CV</a></div>    
           </div>
-          <img class="perfil-img" src="assets/img/perfil.svg" alt="Imagem de um Cartoon do Manel">
+          <img class="perfil-img" src="assets/img/perfil.svg" alt="Imagem de um Cartoon do Manel">   
         </section>
-        <a class="button" href="assets/document/curriculo.docx" target="_blank">Download do meu CV</a> 
-            
+
+       
         <section class="conteudo-secundario" id="sobre">
-            <h3 class="sobre-mim">Sobre mim</h3>
-            <p class="conteudo-secundario-paragrafo">Me chamo Emannuel, tenho 18 anos e moro no interior da Bahia.<br> Desde criança eu sempre fui apaixonado por tecnologia, <br> então decidi trilhar um caminho no ramo da programação. <br> Estou me aprofundando na área de desenvolvimento Front-End  com conhecimento em Git/GitHub, JavaScript, HTML, CSS e Figma.</p>
+          <h3 class="sobre-mim">Sobre mim</h3>
+          <div class="abouth-me">
+            <img src="assets/img/icon-abouth-me.svg" alt="Svg de um garoto mexendo no pc">
+            <p>Me chamo Emannuel, tenho 18 anos e moro no interior da Bahia. Desde criança eu sempre fui apaixonado por tecnologia, então decidi trilhar um caminho no ramo da programação. Estou me aprofundando na área de desenvolvimento Front-End com conhecimento em Git/GitHub, JavaScript, HTML, CSS e Figma.</p>
+          </div>
         </section>
 
         <section class="skills" id="skills">
@@ -75,49 +79,77 @@
 
         <div class="weave" data-sr-id="5" style="visibility: visible;opacity: 1;transition: opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.122s;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-              <path fill="#222222" fill-opacity="1" d="M0,128L48,133.3C96,139,192,149,288,181.3C384,213,480,267,576,240C672,213,768,107,864,80C960,53,1056,107,1152,106.7C1248,107,1344,53,1392,26.7L1440,0L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+              <path fill="#201b2c" fill-opacity="1" d="M0,128L48,133.3C96,139,192,149,288,181.3C384,213,480,267,576,240C672,213,768,107,864,80C960,53,1056,107,1152,106.7C1248,107,1344,53,1392,26.7L1440,0L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
               </path>
             </svg>
           </div>
 
-        <section class="projetos" id="projetos">
-            <h3 class="projetos-titulo">Projetos</h3>
-            <div class="projetos-itens">
-            <a href="https://emannuel-code.github.io/Challenger-ONE-Decodificador/" target="_blank">
-                <img class="projeto-img" src="assets/img/gif.decodificador.gif" alt="gif projeto decodificador">
-            </a>
-            <div class="projeto-descricao">
-                <h3 class="projeto-titulo">Decodificador de Texto
-                </h3>
-                <p><strong>Esse projeto é um decodificador de texto onde pode criptografar, descriptografar e copiar os textos.</strong> 
-                </p>
-                <div class="projeto-buttom">
-                    <a href="https://github.com/Emannuel-code/Challenger-ONE-Decodificador" target="_blank"
-                        class="projeto-link">GitHub<img src="assets/img/githhubButton.svg"></a>
-                    <a href="https://emannuel-code.github.io/Challenger-ONE-Decodificador/" target="_blank"
-                        class="projeto-link">Site<img src="assets/img/siteButton.svg"></a>
-                </div>
+          <section class="projetos__container" id="projetos">
+            <h2 class="projetos__titulo">
+               <a title="Clique aqui para voltar ao topo da página">Experiencia profissional</a>
+            </h2>
+            <ul class="projetos__lista">
+               <li class="projetos__item">
+                  <img class="projetos__tela" src="./assets/img/gif.decodificador.gif" alt="captura de tela Apeperia" title="Tela do projeto Apeperia">
+                  <div class="projetos__textos__container">
+                     <h3 class="projetos__nome">Decodificador</h3>
+                     <p class="projetos__texto">...................</p>
+                     <div class="botao__container">
+                        <a class="botao__secundario" href="https://github.com/Emannuel-code/Challenger-ONE-Decodificador" target="_blank" rel="noopener noreferrer" title="Clique para visualiar Repositório">Repositorio</a>
+                        <a class="botao__primario" href="https://emannuel-code.github.io/Challenger-ONE-Decodificador/" target="_blank" rel="noopener noreferrer" title="Clique para acessar página">Ver demo</a>
+                     </div>
+                  </div>
+               </li>
+               <li class="projetos__item single">
+                  <img class="projetos__tela right" src="./assets/img/gif.portfolio.gif" alt="captura de tela Alurinha" title="Tela do projeto Alurinha">
+                  <div class="projetos__textos__container">
+                     <h3 class="projetos__nome">Portfolio</h3>
+                     <p class="projetos__texto">................</p>
+                     <div class="botao__container">
+                        <a class="botao__secundario" href="https://github.com/Emannuel-code/Portfolio" target="_blank" rel="noopener noreferrer" title="Clique para visualiar Repositório">Repositorio</a>
+                        <a class="botao__primario" href="https://emannuel-code.github.io/Portfolio/" target="_blank" rel="noopener noreferrer" title="Clique para acessar página">Ver demo</a>
+                     </div>
+                  </div>
+            </section>  
+
+            <div class="weave2" data-sr-id="5" style="visibility: visible;opacity: 1;transition: opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.122s;">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#5035AC" fill-opacity="1" d="M0,128L48,133.3C96,139,192,149,288,181.3C384,213,480,267,576,240C672,213,768,107,864,80C960,53,1056,107,1152,106.7C1248,107,1344,53,1392,26.7L1440,0L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+                </path>
+              </svg>
             </div>
 
-            <div class="projetos-itens">
-              <a href="linkporfolio" target="_blank">
-                  <img src="assets/img/gif.portfolio.gif" alt="gif do Portfolio" class="projeto-img">
-              </a>
-              <div class="projeto-descricao">
-                  <h3 class="projeto-titulo">Portfólio
-                  </h3>
-                  <p>Portfolio que foi utilizado os meus conhecimentos em HTML, CSS E JavaScript
-                  </p>
-                  <div class="projeto-buttom">
-                      <a href="github" target="_blank"
-                          class="projeto-link">GitHub<img src="assets/img/githhubButton.svg"></a>
-                      <a href="link" target="_blank" class="projeto-link">Site<img
-                              src="assets/img/siteButton.svg"></a>
-                  </div>
-              </div>
-          </div>
-        </section>
+            <section>
+              <div class="main-login">
+                <div class="left-login">
+                    <h1>Entre em contato</h1>
+                    <img src="assets/img/Email.svg" class="left-login-img" alt="personagem animação">
+                </div>
+                <div class="right-login"></div>
+                <div class="card-login">
+                    <h1>CONTATO</h1>
+                    <div class="textfield">
+                        <label for="usuario">Seu Nome</label>
+                        <input type="text" name="usuario" placeholder="Seu Nome">
+                    </div>
 
+                    <div class="textfield">
+                      <label for="senha">Email</label>
+                      <input type="email" name="senha" placeholder="Seu Email">
+                   </div>
+
+                    <div class="textfield2">
+                      <label for="usuario">Mensagem</label>
+                      <input type="text" name="mensagem" placeholder="Sua Mensagem">
+                   </div>
+          
+        
+                    <a href="#" class="btn-login">
+                    <span>Enviar</span><i></i>
+                    </a>    
+                </div>
+            </div> 
+            </section>
     </main>
 
     <footer class="rodape" id="contato">
