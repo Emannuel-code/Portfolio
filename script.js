@@ -22,12 +22,15 @@ btnMobile.addEventListener('touchstart', toggleMenu);
 
 window.sr = ScrollReveal({ reset:true});
 ScrollReveal({ distance: '15px' });
-sr.reveal('.conteudo-principal', {duration : 2000, origin: 'right'})
-sr.reveal('.conteudo-secundario-paragrafo', {duration : 2000, origin: 'left'})
-sr.reveal('.projetos-itens', {duration : 2000, origin:'left'})
-sr.reveal('.projeto-descricao', {duration : 2000, origin:'right'})
-sr.reveal('.skills', {duration : 2000, origin:'left'})
-sr.reveal('.button', {duration : 2000, origin: 'left'})
+sr.reveal('.conteudo-principal', {duration : 1000, origin: 'left'})
+sr.reveal('.conteudo-secundario-paragrafo', {duration : 1000, origin: 'left'})
+sr.reveal('.abouth-me', {duration : 1000, origin: 'left'})
+sr.reveal('.projetos__lista', {duration : 500, origin:'right'})
+sr.reveal('.projetos__tela', {duration : 1000, origin:'left'})
+sr.reveal('.skills-conteudo', {duration : 1000, origin:'left'})
+sr.reveal('.left-login', {duration : 1000, origin: 'left'})
+sr.reveal('.card-login', {duration : 1000, origin: 'right'})
+
 
 ///***SCROLL-UP***///
 
